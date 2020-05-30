@@ -6,22 +6,79 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
 
 state: {
-    users: [
+    products: [
         {
-            name: 'Alejandro',
-            lastName: 'Torres',
-            email: 'alejandrojoeltorres@gmail.com'
+            title: 'Camara fotográfica',
+            regularPrice: 2626,
+            discountPrice: 2101,
+            image: {
+                URL: 'https://images.pexels.com/photos/821652/pexels-photo-821652.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                alt: 'Product image'
+            }
         },
         {
-            name: 'Andres',
-            lastName: 'Cano',
-            email: 'acano@gmail.com'
+            title: 'Juego de espejo',
+            regularPrice: 2626,
+            discountPrice: 2101,
+            image: {
+                URL: 'https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                alt: 'Product image'
+            }
         },
         {
-            name: 'Daniel',
-            lastName: 'Torres',
-            email: 'danieltorres@gmail.com'
-        }
+            title: 'Delineador',
+            regularPrice: 2626,
+            discountPrice: 2101,
+            image: {
+                URL: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                alt: 'Product image'
+            }
+        },
+        {
+            title: 'Set de maquillaje',
+            regularPrice: 2626,
+            discountPrice: 2101,
+            image: {
+                URL: 'https://images.pexels.com/photos/3750640/pexels-photo-3750640.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                alt: 'Product image'
+            }
+        },
+        {
+            title: 'Camara fotográfica',
+            regularPrice: 2626,
+            discountPrice: 2101,
+            image: {
+                URL: 'https://images.pexels.com/photos/821652/pexels-photo-821652.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                alt: 'Product image'
+            }
+        },
+        {
+            title: 'Juego de espejo',
+            regularPrice: 2626,
+            discountPrice: 2101,
+            image: {
+                URL: 'https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                alt: 'Product image'
+            }
+        },
+        {
+            title: 'Delineador',
+            regularPrice: 2626,
+            discountPrice: 2101,
+            image: {
+                URL: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                alt: 'Product image'
+            }
+        },
+        {
+            title: 'Set de maquillaje',
+            regularPrice: 2626,
+            discountPrice: 2101,
+            image: {
+                URL: 'https://images.pexels.com/photos/3750640/pexels-photo-3750640.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                alt: 'Product image'
+            }
+        },
     ]
 },
 
@@ -32,27 +89,13 @@ state: {
 
 mutations: {
 
-    addUser(state, user) {
-        state.users.push(user)
-    },
-
-    deleteUser(state, index) {
-        state.users.splice(index, 1);
-    }
 
 },
 
 actions: {
 
-    addUser({ commit }, user) {
-        commit('addUser', user)
-    },
-
-    deleteUser({ commit }, index) {
-        commit('deleteUser', index)
-    }
+    
 
 }
-
 
 })

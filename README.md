@@ -1,24 +1,15 @@
 # clase-de-vue3
 
-## Project setup
+## Para ver el proyecto
 ```
-yarn install
+El compilado esta ubicado en la carpeta dist, con abrir el index.html ya se podrá visualizar.
 ```
 
-### Compiles and hot-reloads for development
+### Para previsualizar el proyecto en vue localhost:8080
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### Dentro de la carpeta store/index.js esta ubicada la información de los productos.
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Use sass y bootstrap 4 para esta prueba.
